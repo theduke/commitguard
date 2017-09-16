@@ -1,10 +1,9 @@
 extern crate cargo_readme;
 
-use std::{path, fs};
-use std::io::{Write};
+use std::{fs, path};
+use std::io::Write;
 
 fn main() {
-
     // Generate README.md with cargo_readme.
 
     let mut f = fs::File::open("src/lib.rs").unwrap();
@@ -14,7 +13,8 @@ fn main() {
         None,
         false,
         false,
-        false).unwrap();
+        false,
+    ).unwrap();
 
     let mut f = fs::File::create("README.md").unwrap();
     f.write_all(content.as_bytes()).unwrap();

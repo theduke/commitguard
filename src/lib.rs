@@ -246,7 +246,8 @@ impl CommitGuard {
                     name
                 ),
                 ErrorMode::Abort => format!(
-                    "{}    echo 'ERROR: check {cmd} failed!'\n    FAILED_CHECKS='$FAILED_CHECKS {cmd}'\n",
+                    "{}    echo 'ERROR: check {cmd} failed!'\n    \
+                     FAILED_CHECKS='$FAILED_CHECKS {cmd}'\n",
                     print_silent,
                     cmd = name
                 ),

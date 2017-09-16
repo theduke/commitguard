@@ -3,7 +3,8 @@
 **commitguard** is a [Rust](https://rust-lang.org) library that makes it very easy to create
 shell scripts that can be used as **git pre-commit** hooks.
 
-The primary use case is generating pre-commit hooks for Rust projects automatically in a **build.rs** build script,
+The primary use case is generating pre-commit hooks for Rust projects automatically in a
+**build.rs** build script,
 but it may be useful for other projects too.
 
 ## Why

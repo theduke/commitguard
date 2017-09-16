@@ -1,0 +1,5 @@
+[tasks.post-build]
+dependencies = [
+    "format",
+    "clippy"
+]
